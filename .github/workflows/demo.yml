@@ -1,4 +1,4 @@
-﻿name: Demo Workflow
+name: Demo Workflow
 
 on:
   workflow_dispatch:
@@ -13,4 +13,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Imprimir mensaje
-        run: echo 'El mensaje es: '${{ github.event.inputs.mensaje }}
+        run: echo "El mensaje es ${{ github.event.inputs.mensaje }}"
